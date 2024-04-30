@@ -22,9 +22,6 @@ import DefaultNavbarMobile from "examples/Navbars/DefaultNavbar/DefaultNavbarMob
 // Soft UI Dashboard React base styles
 import breakpoints from "assets/theme/base/breakpoints";
 
-// firebase
-import { auth } from "../../../firebase";
-
 function DefaultNavbar({ transparent, light, action }) {
   const [mobileNavbar, setMobileNavbar] = useState(false);
   const [mobileView, setMobileView] = useState(false);
@@ -57,16 +54,6 @@ function DefaultNavbar({ transparent, light, action }) {
     // Remove event listener on cleanup
     return () => window.removeEventListener("resize", displayMobileNavbar);
   }, []);
-
-  useEffect(() => {
-    // Check Firebase auth state
-    const unsubscribe = auth.onAuthStateChanged((user) => {
-      setIsLoggedIn(!!user); // Update isLoggedIn state based on authentication status
-    });
-
-    return unsubscribe;
-  }, []);
-
   return (
     <Container>
       <SoftBox
