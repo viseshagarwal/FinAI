@@ -36,6 +36,8 @@ FinAI is a personal finance management application that helps users track their 
 - Modify database details in the `server.js` file according to your database setup.
 - Ensure the database schema matches the requirements of the server-side application.
 
+## Live:
+- [FinAI.visesh.me](https://FinAI.visesh.me)
 ## Contributors
 
 - [Visesh Agarwal](https://github.com/viseshagarwal)
