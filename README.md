@@ -4,6 +4,14 @@
 
 FinAI is a personal finance management application that helps users track their expenses, set budgets, and manage their finances effectively. This project is developed as part of the Software Development Project at the Christ University, Bangalore.
 
+## Technology Stack
+
+- **React js**
+- **Node js**
+- **Express**
+- **MySql**
+  
+
 ## Folder Structure
 
 - **Frontend:** Contains the React.js code for the frontend application.
